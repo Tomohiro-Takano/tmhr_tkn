@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+    
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* header */
+#header .main-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(83, 146, 83);
+    color: #fff;
+    padding: 30px 100px;
+}
+
+#header small {
+    font-size: 1.1rem;
+}
+
+#header .main-title ul {
+    display: flex;
+    padding-top: 15px;
+   
+}
+
+#header .main-title li {
+    margin-left: 20px;
+   
+   
+}
+
+#header .main-title a {
+    color: #fff;
+}
+
+/* main */
+#main .menu {
+    font-size: 1.5rem;
+    
+}
+
+#main .menu .menu-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#main .menu .menu-list li {
+    background-color: rgb(237, 232, 232);
+    flex-basis: 20%;
+    border: 1px solid #fff;
+}
+
+#main .menu .menu-list li  a {
+    display: block;
+    transition: all 0.3s;
+}
+
+#main .menu .menu-list a:hover {
+    background-color: rgb(83, 146, 83);
+}
+
+#main .mainvisual {
+    position: relative;
+}
+
+#main .mainvisual img {
+    width: 1200px;
+    height: 550px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+#main .apoint {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:rgba(255, 255, 255,0.9);
+    padding: 20px 40px;
+}
+
+#main table {
+    border-collapse: collapse;
+    height: 100px;
+   
+   
+}
+
+#main  table th,table td {
+    border: solid 1px grey;
+    padding: 0 10px;
+   
+}
+
+#main .detail .tel {
+    font-size: 1.5rem;
+}
+
+#main .detail .at1 {
+    margin-bottom: 10px;
+}
+
+#main .detail .at2 {
+    margin-bottom: 10px;
+}
+
+#main .detail .at3 {
+    margin-bottom: 10px;
+}
+
+/* container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+#container .work {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+#container .cel,
+#container .cel2 {
+    margin-bottom: 30px;
+}
+
+
+#container .info-title {
+    border-bottom: solid 1px grey;
+}
+
+
+#container .border {
+    margin-bottom: 50px;
+   
+
+}
+
+#container .border li {
+    border-bottom: solid 1px grey;
+    padding: 20px 40px;
+}
+
+#container .border2 {
+    border-top: solid 1px grey;
+    border-right: solid 1px grey;
+    border-left: solid 1px grey;
+    text-align: center;
+}
+
+#container .border2 li {
+    border-bottom: solid 1px grey;
+    padding: 20px 40px;
+    
+}
+
+#container .info-2 {
+    border-bottom: solid 1px grey;
+    padding: 10px 20px;
+    background-color: rgb(233, 227, 227);
+}
+
+#container .access {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#container .map iframe {
+    width: 800px;
+    height: 350px;
+}
+
+/* footer */
+#footer {
+    color: #fff;
+    background-color: rgb(83, 146, 83);
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-text {
+    font-size: 1.8rem;
+    padding: 20px 50px;
+}
+
+#footer .footer2 {
+    font-size: 1.1rem;
+}
+
+#footer .footer-sub {
+    margin-top: 30px;
+    padding-right: 50px;
+}
+
+#footer .footer-sub a {
+    color: #fff;
+}
+
+#footer .footer-sub li:last-child {
+    font-size: 1.5rem;
+}
+
+#container .access {
+    margin-top: 60px;
+}
+
+#container .map {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    
+  
+}
+
+#container .map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* sp */
+@media screen  and (max-width: 768px) {
+
+    #header .main-title {
+        display: block;
+        padding: 0;
+    }
+
+    #header .main-title .title {
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    #header small {
+        font-size: 0.75rem;
+    }
+
+    #header .main-title ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #header .main-title li {
+        font-size: small;
+    }
+
+    #main .menu ul {
+        flex-direction: column;
+    }
+
+    #main .apoint {
+        display: block;
+        padding: 0 16px;
+      
+    }
+
+    #container {
+        display: block;
+    }
+
+    
+}
